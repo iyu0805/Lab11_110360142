@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                 try{
                     dbrw.execSQL("UPDATE myTable SET price = "
                             + ed_price.getText().toString()
-                            + "WHERE book LIKE'"
+                            + " WHERE book LIKE'"
                             + ed_book.getText().toString() + "'");
                     Toast.makeText(MainActivity.this, "更新書名" + ed_book.getText().toString() +
                             "  價格" + ed_price.getText().toString(), Toast.LENGTH_SHORT).show();
